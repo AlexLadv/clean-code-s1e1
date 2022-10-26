@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-wrap .header-wrap-img {
+.header-wrap .header-wrap__img {
   width: 100%;
 }
-.header-wrap .more-inf {
+.header-wrap .header-wrap__more-inf {
   font-family: "Fantasy", cursive;
 }
 
@@ -33,7 +33,7 @@
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrapper {
+.top-section__wrapper {
   display: flex;
   margin-top: 20px;
 }
