@@ -152,3 +152,17 @@
 .list .item.edit-mode .label {
   display: none;
 }
+
+
+.rep {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgb(255, 94, 0);
+}
+.link {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f8f8f8;
+  text-decoration: none;
+  text-align: center;
+}
