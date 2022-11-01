@@ -1,19 +1,62 @@
+<!DOCTYPE html>
 <html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+<body class="body">
+  <header class="header-wrap">
+    <img class="header-wrap__img" src="./eisenhower-matrix.jpg" alt="The Eisenhower Matrix">
+    <a class="header-wrap__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+  <main class="centered-main-page-element">
+    <h3 class="title">Add Item</h3>
+    <div class="top-section" id="top-section">
+      <div class="top-section__wrapper">
+        <input id="new-task" class="top-section__task task input" type="text">
+        <button class="top-section__add-task button">Add</button>
+      </div>
+    </div>
+    <h3 class="title">Todo</h3>
+    <ul class="todo-list list" id="incomplete-tasks">
+      <li class="todo-list__item item">
+        <input class="todo-list__input input" type="checkbox">
+          <label class="todo-list__task task label">Pay Bills</label>
+        <input type="text" class="todo-list__task task input">
+        <button class="todo-list__edit edit button">Edit</button>
+        <button class="todo-list__delete delete button">
+          <img class="todo-list__delete-button-img delete-button-img" src="./remove.svg" alt="">
+        </button>
+      </li>
+      <li class="todo-list__item edit-mode item">
+        <input class="todo-list__input input" type="checkbox">
+          <label class="todo-list__task task label">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="todo-list__task task input">
+        <button class="todo-list__edit edit button">Save</button>
+        <button class="todo-list__delete delete button">
+          <img class="todo-list__delete-button-img delete-button-img" src="./remove.svg" alt="">
+        </button>
+      </li>
+    </ul>
+    <h3 class="title">Completed</h3>
+    <ul class="completed-list list" id="completed-tasks">
+      <li class="completed-list__item item">
+        <input class="completed-list__input input" type="checkbox" checked>
+          <label class="completed-list__task task label">See the Doctor</label>
+        <input type="text" class="completed-list__task task input">
+        <button class="completed-list__edit edit button">Edit</button>
+        <button class="completed-list__delete delete button">
+          <img class="completed-list__delete-button-img delete-button-img" src="./remove.svg" alt="">
+        </button>
+      </li>
+    </ul>
+
+    <div class="rep">
+      <a class="link" target="_blank" href="https://github.com/AlexLadv/clean-code-s1e1/pull/2">Ссылка на репозиторий, для проверки</a>
+    </div>
+  </main>
+  
+<script src="app.js"></script>
 </body>
 </html>
